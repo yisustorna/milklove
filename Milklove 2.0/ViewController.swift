@@ -19,6 +19,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    /*override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let defaults = UserDefaults.standard
+        let hasviewtutorial = defaults.bool(forKey: "hasviewedtutorial")
+        if hasviewtutorial{
+            return
+        }
+        
+        if let pageVC = storyboard?.instantiateViewController(withIdentifier: "WalkthrounghController") as? TutorialPageViewController{
+            self.present(pageVC, animated: true, completion: nil)
+            print("tuto")
+        }
+    }*/
+    
 
 
 }
